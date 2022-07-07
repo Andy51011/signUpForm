@@ -1,59 +1,128 @@
-.form-container {
-  display: flex;
-  justify-content: center;
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-form {
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form__title {
+  text-align: center;
+  font-size: 30px;
+  margin: 5px;
+}
+
+.form__inner > input {
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid rgba(150, 137, 137, 0.377);
+}
+
+input {
+  margin-top: 10px;
+}
+
+.form__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   max-width: 550px;
 }
 
-header {
-  font-size: 50px;
+.form__fnln {
+  display: flex;
+}
+
+.flex__grow {
+  flex-grow: 2;
+}
+
+.form__contact {
+  display: block;
+}
+
+.form__contact {
+  width: 100%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.form__password {
+  display: flex;
+}
+
+/*checkbox section*/
+.form__checkbox {
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+}
+
+.checkbox__item {
+  flex-basis: 65%;
+}
+
+p {
+  font-size: 15px;
+}
+
+.checkbox__registerButton {
+  background-color: rgb(102, 182, 253);
+  color: white;
+  border-radius: 5px;
+  padding: 4px;
+  border: none;
 }
 
 a {
   text-decoration: none;
-  color: rgb(60, 122, 188);
+  color: rgb(102, 182, 253);
 }
 
-input {
-  padding: 8px;
-  border-radius: 8px;
-  margin: 7px;
-  font-size: 22px;
-  border: 1px solid #ccc;
-  outline: none;
+/*for register and submit button*/
+.form__click {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
+
+.form__click > button {
+  width: 100%;
+  padding: 15px;
+  margin: 5px;
+  border-radius: 5px;
+  border: none;
+  font-size: 20px;
+}
+
+.form__register {
+  background-color: rgb(102, 182, 253);
+  color: white;
+}
+
+.form__signIn {
+  background-color: rgb(80, 200, 80);
+  color: white;
+}
+/* used to split input boxes in the middle*/
+.split__right {
+  margin-right: 10px;
+}
+
+.split__left {
+  margin-left: 10px;
 }
 
 input:focus {
-  box-shadow: 0 0 5px rgb(55, 177, 211);
-  border: 1px solid rgb(55, 177, 211);
-}
-
-.click_button {
-  width: 250px;
-  color: white;
-}
-
-#sign_button {
-  background-color: rgb(69, 189, 69);
-}
-
-#register_button {
-  background-color: rgb(117, 117, 229);
-  color: white;
-  border: 15px;
-}
-
-header {
-  text-align: center;
-}
-
-p {
-  font-size: 2px;
-}
-
-.input-block {
-  display: block;
-  width: 90%;
+  box-shadow: 2px 2px 2px 3px rgb(102, 182, 253);
+  border: 0px solid rgb(102, 182, 253);
+  outline-color: rgb(102, 182, 253);
 }
