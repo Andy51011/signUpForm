@@ -1,0 +1,24 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100%;
+}
+
+.container__box {
+  height: 100%;
+  width: 100%;
+}
+
+.box {
+  border: 1px solid black;
+  background-color: blue;
+  height: 250px;
+  width: 250px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
